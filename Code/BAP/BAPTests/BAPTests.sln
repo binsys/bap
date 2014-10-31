@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{28A7E203-32AB-43A2-8021-381BE9AC320F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{38064017-7E88-4D92-AF20-218AFFDB97B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|Itanium = Debug|Itanium
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|Itanium = Release|Itanium
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|ARM.Build.0 = Debug|ARM
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|Itanium.ActiveCfg = Debug|Itanium
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|Itanium.Build.0 = Debug|Itanium
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|Win32.Build.0 = Debug|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|x64.ActiveCfg = Debug|x64
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Debug|x64.Build.0 = Debug|x64
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|ARM.ActiveCfg = Release|ARM
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|ARM.Build.0 = Release|ARM
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|Itanium.ActiveCfg = Release|Itanium
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|Itanium.Build.0 = Release|Itanium
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|Win32.ActiveCfg = Release|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|Win32.Build.0 = Release|Win32
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|x64.ActiveCfg = Release|x64
+		{28A7E203-32AB-43A2-8021-381BE9AC320F}.Release|x64.Build.0 = Release|x64
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|Itanium.ActiveCfg = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|ARM.ActiveCfg = Release|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|Itanium.ActiveCfg = Release|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|Win32.ActiveCfg = Release|Any CPU
+		{38064017-7E88-4D92-AF20-218AFFDB97B4}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

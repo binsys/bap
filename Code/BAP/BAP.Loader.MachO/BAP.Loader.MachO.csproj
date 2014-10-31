@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{618611E8-E6CF-4DAA-B4D9-035C18D963DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BAP.Loader.MachO</RootNamespace>
+    <AssemblyName>BAP.Loader.MachO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoadCommands\dyld_info_command.cs" />
+    <Compile Include="LoadCommands\dylib_command.cs" />
+    <Compile Include="LoadCommands\dylinker_command.cs" />
+    <Compile Include="LoadCommands\dysymtab_command.cs" />
+    <Compile Include="LoadCommands\ILoadCommand.cs" />
+    <Compile Include="lc_str.cs" />
+    <Compile Include="LoadCommands\load_command.cs" />
+    <Compile Include="LoadCommands\prebound_dylib_command.cs" />
+    <Compile Include="LoadCommands\routines_command.cs" />
+    <Compile Include="LoadCommands\routines_command_64.cs" />
+    <Compile Include="LoadCommands\segment_command.cs" />
+    <Compile Include="LoadCommands\sub_client_command.cs" />
+    <Compile Include="LoadCommands\sub_framework_command.cs" />
+    <Compile Include="LoadCommands\sub_library_command.cs" />
+    <Compile Include="LoadCommands\sub_umbrella_command.cs" />
+    <Compile Include="LoadCommands\symtab_command.cs" />
+    <Compile Include="LoadCommands\thread_command.cs" />
+    <Compile Include="LoadCommands\twolevel_hints_command.cs" />
+    <Compile Include="LoadCommands\uuid_command.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="cpu_subtype_t.cs" />
+    <Compile Include="cpu_type_t.cs" />
+    <Compile Include="fileflag.cs" />
+    <Compile Include="filetype.cs" />
+    <Compile Include="LC.cs" />
+    <Compile Include="LoadCommands\version_min_command.cs" />
+    <Compile Include="vm_prot_t.cs" />
+    <Compile Include="MachOImageReader.cs" />
+    <Compile Include="mach_header.cs" />
+    <Compile Include="mach_header_64.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoadCommands\segment_command_64.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAP.Loader\BAP.Loader.csproj">
+      <Project>{09ce9852-a2bd-435a-8a24-def3366d0792}</Project>
+      <Name>BAP.Loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BAP.Utils\BAP.Utils.csproj">
+      <Project>{6acf5985-7582-4839-8582-3cce48e3c6f7}</Project>
+      <Name>BAP.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
